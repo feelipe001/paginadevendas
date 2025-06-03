@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Afroworld</title>
+<link href="/css/web.css" rel="stylesheet"/>
+<link href="/public/api/image/minilogo" rel="icon" type="image/x-icon"/>
+<link href="/public/css/font-awesome.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="/public/js/font-awesome.js"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7Og2iq2tl3zF5xL2zjUOzvDXL4nVf8srBeV" rel="stylesheet"/></head>
+<body class="body-planos">
+<div class="container-planos">
+<div class="hero">
+<div class="fundo">
+<img alt="" src="https://i.imgur.com/rTVZeUx.jpg"/>
+</div>
+<div class="hero-int">
+<h3>Viva a força e a representatividade afro!
+A única plataforma com centenas de <span style="color: #f8ae00;">filmes e séries que traz protagonistas negros</span>. ✊🏾</h3>
+<div class="cadastre-landing">
+<h4><i class="fa-solid fa-circle-check"></i> Vá até o final da página, crie sua conta, ative sua assinatura e aproveite.</h4>
+</div>
+</div>
+</div>
+<div class="landing-planos">
+<div class="lottie-container">
+<!-- Aqui vai a animação Lottie -->
+</div>
+<div class="text-container">
+<h1>
+            Como você <span style="color: #f8ae00;"> receberá</span> seu acesso?<br/>
+            Assim que efetuar o pagamento, você receberá um <span style="color: #f8ae00;"> e-mail</span> com sua senha para acessar a plataforma.<span style="color: #000000;"> CONFIRA NA CAIXA DE SPAM DO SEU E-MAIL. </span>
+</h1>
+</div>
+</div>
+<!--<div class="plataformas">-->
+<!--        <h3>Você terá acesso ao nosso catálogo com filmes e séries das principais plataformas de streaming do mercado.</h3>-->
+<!--        <ul>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/primevideo-logo.png" alt=""></li>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/hulu-logo.png" alt=""></li>-->
+<!-- <li><img src="https://v.baixarfree.com/file/utxgmpx/netflix-logo.png" alt=""></li> -->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/hbomax-logo.png" alt=""></li>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/appletv-logo.png" alt=""></li>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/discoveryplus-logo.png" alt=""></li>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/disneyplus-logo.png" alt=""></li>-->
+<!--            <li><img src="https://v.baixarfree.com/file/utxgmpx/starplus-logo.png" alt=""></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<div class="filmes-series-pop-planos">
+<h2>Alguns dos melhores filmes com protagonistas negros</h2>
+<div class="movies-landing">
+              @foreach ($topMovies as $movie)
+                  <div class="poster-movie">
+<img alt=" $movie-&gt;title " src=" $movie-&gt;poster_path "/>
+</div>
+              @endforeach
+          </div>
+<h2>Algumas das melhores séries com protagonistas negros</h2>
+<div class="series-landing">
+              @foreach ($topSeries as $serie)
+                  <div class="poster-serie">
+<img alt=" $serie-&gt;name " src=" $serie-&gt;poster_path "/>
+</div>
+              @endforeach
+          </div>
+</div>
+<div class="planos-list">
+<div class="plano">
+<h2 class="titulo-planos">Plano de 30 Dias</h2>
+<p class="preco-planos">R$10,00</p>
+<ul class="itens-plans">
+<li><i class="fa-regular fa-film-simple"></i> Centenas de filmes e séries</li>
+<li><i class="fa-regular fa-bolt"></i> Sem travamentos</li>
+<li><i class="fa-regular fa-ban"></i> Sem anúncios</li>
+</ul>
+<a class="btn-planos" href="https://ev.braip.com/checkout/pladqlwe/cheqxpw8">Assinar</a>
+</div>
+<div class="plano">
+<h2 class="titulo-planos">Plano de 60 Dias</h2>
+<p class="preco-planos">R$16,00</p>
+<ul class="itens-plans">
+<li><i class="fa-regular fa-film-simple"></i> Centenas de filmes e séries</li>
+<li><i class="fa-regular fa-bolt"></i> Sem travamentos</li>
+<li><i class="fa-regular fa-ban"></i> Sem anúncios</li>
+</ul>
+<a class="btn-planos" href="https://ev.braip.com/checkout/pla6zxw1/cheqxpw8">Assinar</a>
+</div>
+<div class="plano">
+<h2 class="titulo-planos">Plano de 90 Dias</h2>
+<p class="preco-planos">R$25,00</p>
+<ul class="itens-plans">
+<li><i class="fa-regular fa-film-simple"></i> Centenas de filmes e séries</li>
+<li><i class="fa-regular fa-bolt"></i> Sem travamentos</li>
+<li><i class="fa-regular fa-ban"></i> Sem anúncios</li>
+</ul>
+<a class="btn-planos" href="https://ev.braip.com/checkout/pla92ek2/cheqxpw8">Assinar</a>
+</div>
+</div>
+<a class="whatsapp-btn" href="https://chat.whatsapp.com/DzjfZ24MM4aLpaviBlpYvD" target="_blank">
+<i class="fab fa-whatsapp"></i> Entre na comunidade afro 
+        </a>
+<div class="faq">
+<label class="accordion-wrapper">
+<h2>Perguntas Frequentes</h2>
+<input class="accordion" hidden="" type="checkbox"/>
+<div class="title">
+<strong>Como Ativar ?</strong>
+<svg class="side-icon" fill="white" title="angle-right" viewbox="0 0 256 512" width="12">
+<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+</svg>
+<svg class="down-icon" fill="white" height="24" title="angle-down" viewbox="0 0 320 512">
+<path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+</svg>
+</div>
+<div class="content">
+<p>Apenas crie uma conta no aplicativo usando seu email, então quando escolher o plano e for fazer o pagamento use o mesmo email do app.</p>
+</div>
+</label>
+<label class="accordion-wrapper">
+<input class="accordion" hidden="" type="checkbox"/>
+<div class="title">
+<strong>Demora para ativar ?</strong>
+<svg class="side-icon" fill="white" title="angle-right" viewbox="0 0 256 512" width="12">
+<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+</svg>
+<svg class="down-icon" fill="white" height="24" title="angle-down" viewbox="0 0 320 512">
+<path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+</svg>
+</div>
+<div class="content">
+<p>Não. Assim que o pagamento for realizado com sucesso sua assinatura será ativada instantaneamente.</p>
+</div>
+</label>
+<label class="accordion-wrapper">
+<input class="accordion" hidden="" type="checkbox"/>
+<div class="title">
+<strong>Possui Fidelidade ?</strong>
+<svg class="side-icon" fill="white" title="angle-right" viewbox="0 0 256 512" width="12">
+<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+</svg>
+<svg class="down-icon" fill="white" height="24" title="angle-down" viewbox="0 0 320 512">
+<path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+</svg>
+</div>
+<div class="content">
+<p>Não, o sistema não cobra automaticamente todos os meses, quando sua assinatura terminar você precisa vir aqui e ativar novamente.</p>
+</div>
+</label>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+    var animation = bodymovin.loadAnimation({
+        container: document.querySelector('.lottie-container'), // Seleciona o container Lottie
+        path: 'https://lottie.host/54bc4de0-06a8-47ef-ae31-6c0579374fe4/wZWwVv7q6h.json', // Caminho para o arquivo JSON da animação
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+    });
+</script>
+</body>
+</html>
